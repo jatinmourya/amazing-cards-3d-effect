@@ -23,7 +23,6 @@ body {
 }
 .cardbg {
   padding: 30px;
-  transform-style: preserve-3d;
   transform: perspective(1000px);
   height: 630px;
   width: 400px;
@@ -39,7 +38,6 @@ body {
 .content {
   margin: 10px 0 0 0;
   border-radius: 15px;
-  transform: translateZ(30px);
   color: rgb(255, 255, 255);
   padding: 20px;
   height: 200px;
@@ -60,6 +58,8 @@ img {
   object-fit: cover;
 }
 .content:hover,img:hover{
+  
+  transform: translateZ(30px);
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
 }
 .spcbtwn {
