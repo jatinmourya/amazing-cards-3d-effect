@@ -23,6 +23,7 @@ body {
 }
 .cardbg {
   padding: 30px;
+  transform-style: preserve-3d;
   transform: perspective(1000px);
   height: 630px;
   width: 400px;
@@ -33,7 +34,7 @@ body {
   flex-direction: column;
 }
 .cardbg:hover {
-   box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.3);
 }
 .content {
   margin: 10px 0 0 0;
@@ -42,25 +43,27 @@ body {
   padding: 20px;
   height: 200px;
   width: 100%;
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(41, 41, 41);
   display: flex;
   justify-content: center;
   align-self: center;
   flex-direction: column;
+  
 }
+
 img {
   margin: 0 0 10px 0;
-  transform: translateZ(30px);
   height: 350px;
   width: 100%;
   align-self: center;
   border-radius: 15px;
   object-fit: cover;
+  
 }
 .content:hover,img:hover{
-  
   transform: translateZ(30px);
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+
 }
 .spcbtwn {
   margin-top: auto;
