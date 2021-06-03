@@ -1,2 +1,2 @@
 # amazing-cards-3d-effect
-![ss111](https://user-images.githubusercontent.com/55657605/120194626-74996100-c23b-11eb-904d-e3bcf78746fa.png)
+![ss](https://user-images.githubusercontent.com/55657605/120582182-ada72080-c449-11eb-895c-11dc3e9c21c3.png)
