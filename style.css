@@ -1,117 +1,121 @@
-* {
-  font-family: "lato", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-color: rgb(151, 151, 151);
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-.cardcontainer {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.cardbg {
-  margin: 20px;
-  padding: 30px;
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-  height: 630px;
-  width: 400px;
-  background-color: rgb(199, 199, 199);
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.cardbg:hover {
-  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.3);
-}
-.content {
-  margin: 10px 0 0 0;
-  border-radius: 15px;
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  height: 200px;
-  width: 100%;
-  background-color: rgb(41, 41, 41);
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  flex-direction: column;
-}
 
-img {
-  border: 2px solid rgb(170, 170, 170);
-  margin: 0 0 10px 0;
-  height: 350px;
-  width: 100%;
-  align-self: center;
-  border-radius: 15px;
-  object-fit: cover;
-}
-.content:hover,
-img:hover {
-  transform: translateZ(30px);
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-}
-.spcbtwn {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-}
-button {
-  transition: 0.4s;
-  color: gainsboro;
-  height: 30px;
-  padding: 5px;
-  border: 1.5px solid gray;
-  outline: none;
-  background-color: transparent;
-}
-.btn1 {
-  margin: 0;
-  border-radius: 5px 0 0 5px;
-}
-.btn2 {
-  margin: 0;
-  border-radius: 0 5px 5px 0;
-}
-.btn1:hover {
-  color: black;
-  background-color: gray;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "lato", sans-serif;
+      transition: 0.2s ease all;
+    }
 
-.btn2:hover {
-  color: black;
-  background-color: gray;
-}
+    body {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
 
-@media only screen and (max-width: 1100px) {
-  /* .card2,
-  .card3 {
-    display: none;
-  } */
-  .cardbg {
-    height: 500px;
-    width: 310px;
-  }
-  .content {
-    padding: 15px;
-    font-size: 15px;
-    height: 180px;
-    width: 100%;
-  }
-  img {
-    height: 300px;
-    width: 100%;
-  }
-}
+    .cardcontainer {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .cardbg {
+      margin: 30px;
+      padding: 30px;
+      transform-style: preserve-3d;
+      transform: perspective(1000px);
+      height: 630px;
+      width: 400px;
+      background-color: #e2e2e2;
+      border: 2px solid #c8c8c8;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .cardbg:hover {
+      box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    img {
+      border: 2px solid #c8c8c8;
+      margin: 0 0 10px 0;
+      height: 350px;
+      width: 100%;
+      align-self: center;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .content {
+      margin: 10px 0 0 0;
+      border-radius: 15px;
+      color: #ffffff;
+      padding: 20px;
+      height: 200px;
+      width: 100%;
+      background-color: #292929;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      flex-direction: column;
+    }
+
+    .content:hover,
+    img:hover {
+      transform: translateZ(30px);
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .spcbtwn {
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button {
+      color: #dcdcdc;
+      height: 30px;
+      padding: 5px;
+      border: 1.5px solid #808080;
+      outline: none;
+      background-color: transparent;
+    }
+
+    .btn1 {
+      border-radius: 5px 0 0 5px;
+    }
+
+    .btn2 {
+      border-radius: 0 5px 5px 0;
+    }
+
+    .btn1:hover,
+    .btn2:hover {
+      color: black;
+      background-color: #808080;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      .cardbg {
+        height: 500px;
+        width: 310px;
+      }
+
+      .content {
+        padding: 15px;
+        font-size: 15px;
+        height: 180px;
+        width: 100%;
+      }
+
+      img {
+        height: 300px;
+        width: 100%;
+      }
+    }
